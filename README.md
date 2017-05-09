@@ -6,7 +6,7 @@
 
 ``` bash
 # install dependencies
-npm install vue2-touch --save
+npm install vue2-touch hammerjs --save
 ```
 
 ## Usage
