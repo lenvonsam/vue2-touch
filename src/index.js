@@ -4,7 +4,4 @@ const vue2Touch = {
     Vue.directive('touch', touches)
   }
 }
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(vue2Touch.install)
-}
 export default vue2Touch

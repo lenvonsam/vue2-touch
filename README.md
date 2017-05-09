@@ -7,21 +7,23 @@
 ``` bash
 # install dependencies
 npm install vue2-touch --save
+```
 
 ## Usage
 
 ### ES6
 
-``` bash
+``` javascript
 import Vue2Touch from 'vue2-touch'
 Vue.use(Vue2Touch)
+```
 
 ### Using the v-touch directive
 
-``` bash
+``` html
 <a v-touch:tap="callback">Tap me!</a>
-
 <div v-touch:swipe="callback">Swipe me!</div>
+```
 
 
 ### callback
