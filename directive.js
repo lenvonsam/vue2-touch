@@ -17,6 +17,14 @@ var handler = null
 var evtType = ''
 
 const touchs = {
+  config: function (config) {
+    if (config.gestures) gestures = config.gestures
+    if (config.directions) {
+      for (let k in config.directions) {
+        directions[k] = config.directions[k]
+      }
+    }
+  },
   bind: function(el, binding) {
     if (!evt) {
       evt = new Hammer.Manager(el)

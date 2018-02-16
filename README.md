@@ -18,6 +18,18 @@ import Vue2Touch from 'vue2-touch'
 Vue.use(Vue2Touch)
 ```
 
+### Add global Config
+
+``` javascript
+Vue.use(Vue2Touch, {
+  gestures: ['swipe'],
+  directions: {
+    swipe: ['swipeleft']
+  }
+})
+```
+above configurations mean that it can override v-touch gestures which just listens to swipe event and override swipe directions which only listens to swipeleft event.
+
 ### Using the v-touch directive
 
 ``` html
