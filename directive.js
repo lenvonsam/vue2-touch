@@ -19,8 +19,8 @@ var evtType = ''
 const touchs = {
   config: function (config) {
     if (config == null) return;
-    if (config.gestures) gestures = config.gestures
-    if (config.directions) {
+    if (config.gestures && (config.gestures instanceof Array)) gestures = config.gestures
+    if (config.directions && (config.directions instanceof Array)) {
       for (let k in config.directions) {
         directions[k] = config.directions[k]
       }
