@@ -31,12 +31,7 @@ const touchs = {
       evt = new Hammer.Manager(el)
     }
     var type = evtType = binding.arg.toLowerCase()
-    var index = -1
-    gestures.findIndex(function(gst, idx){
-      if(gst === type) {
-        index = idx
-      }
-    })
+    var index = gestures.indexOf(type)
     if (index < 0) {
       console.warn('[vue2-touch] event type value is invalid')
       return
